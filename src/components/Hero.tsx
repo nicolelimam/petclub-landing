@@ -199,7 +199,7 @@ export function Hero() {
             <div className="relative mx-auto w-full max-w-[320px] sm:max-w-[400px] md:max-w-[450px] lg:max-w-none">
               <div className="relative z-10 overflow-hidden rounded-t-[120px] sm:rounded-t-[160px] rounded-b-[40px] sm:rounded-b-[60px] bg-white p-2.5 md:p-3 shadow-2xl shadow-slate-900/10 border-4 border-white">
                 <img
-                  src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1000&q=80"
+                  src="https://images.unsplash.com/photo-1560743173-567a3b5658b1?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Cão e gato felizes juntos na clínica"
                   className="w-full h-[300px] sm:h-[380px] md:h-[450px] lg:h-[500px] object-cover rounded-t-[110px] sm:rounded-t-[150px] rounded-b-[35px] sm:rounded-b-[50px] transform hover:scale-105 transition-transform duration-700"
                 />
