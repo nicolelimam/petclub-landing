@@ -4,7 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { motion, AnimatePresence } from 'framer-motion'
 import { SectionTitle } from './ui/SectionTitle'
-import { Calendar as CalendarIcon, Clock, Send, ChevronDown, Check, Dog, Cat, Bird, PawPrint, Stethoscope, Syringe, TestTube, Scissors, AlertTriangle, Sparkles } from 'lucide-react'
+import { Calendar as Clock, Send, ChevronDown, Check, Dog, Cat, Bird, PawPrint, Stethoscope, Syringe, TestTube, Scissors, AlertTriangle, Sparkles } from 'lucide-react'
 import { toast } from 'sonner'
 import { cn } from '../utils/cn'
 
