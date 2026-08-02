@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --color-primary: #F97316;
+  --color-primary-dark: #EA580C;
+  --color-primary-light: #FDBA74;
+  --color-primary-accent: #FB923C;
+  --color-cream: #FFF7ED;
+  --color-warm: #FFFBF5;
+  --color-surface-hover: #FFF1E6;
+  --color-border: #FED7AA;
+}
+
+html, body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background: #FFFBF5;
+  color: #1F2937;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #FFF7ED; }
+::-webkit-scrollbar-thumb { background: #FDBA74; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #F97316; }
+
+/* Estilização dos inputs nativos de Date/Time no tema */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(48%) sepia(85%) saturate(1490%) hue-rotate(346deg) brightness(101%) contrast(96%);
+}
+
+/* Background Pattern de Patinhas Suaves */
+.bg-paws {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23F97316' fill-opacity='0.04'%3E%3Cpath d='M20 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 4c-2.2 0-4 1.8-4 4 0 2.5 3 6 4 7 1-1 4-4.5 4-7 0-2.2-1.8-4-4-4zM60 58c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 4c-2.2 0-4 1.8-4 4 0 2.5 3 6 4 7 1-1 4-4.5 4-7 0-2.2-1.8-4-4-4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(254, 215, 170, 0.4);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-blob {
+  background: radial-gradient(circle at 30% 30%, rgba(253, 186, 116, 0.4) 0%, transparent 50%),
+              radial-gradient(circle at 70% 70%, rgba(249, 115, 22, 0.15) 0%, transparent 50%);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float { animation: float 4s ease-in-out infinite; }
+
+@keyframes paw {
+  0%, 100% { transform: rotate(-8deg) scale(1); opacity: 0.6; }
+  50% { transform: rotate(8deg) scale(1.1); opacity: 1; }
+}
+.animate-paw { animation: paw 3s ease-in-out infinite; }
